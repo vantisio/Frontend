@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/logo.png" width="1080" alt="Vantis">
+  <img src="./public/logo.png" width="240" alt="Vantis">
 </p>
 
 <h1 align="center">
