@@ -44,14 +44,14 @@ export interface NavItem {
 
 // Team Types
 export interface TeamMember {
-  [x: string]: string | StaticImport;
   name: string;
   role: string;
   description: string;
-  expertise: string;
+  expertise: string[];
   github: string;
   linkedin: string;
   email: string;
+  image: string | StaticImport;
 }
 
 // Product Types
