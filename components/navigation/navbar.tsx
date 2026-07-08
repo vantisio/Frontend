@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState, useRef } from "react";
 import { cn } from "@/lib/utils";
 import { easing } from "@/animations/variants";
+import Image from "next/image";
 
 export function Navbar() {
   const { theme, setTheme } = useTheme();
@@ -32,7 +33,7 @@ export function Navbar() {
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
   };
@@ -89,10 +90,21 @@ export function Navbar() {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.4, ease: easing }}
-            className="font-persian text-3xl font-bold text-text-primary focus:outline-none focus:ring-2 focus:ring-accent-primary rounded"
+            className="flex items-center gap-3 rounded focus:outline-none focus:ring-2 focus:ring-accent-primary"
             aria-label="وانتیس - صفحه اصلی"
           >
-            وانتیس
+            <Image
+              src="/logo.png"
+              alt="لوگوی وانتیس"
+              width={44}
+              height={44}
+              priority
+              className="h-11 w-11 object-contain"
+            />
+
+            <span className="font-persian text-3xl font-bold text-text-primary">
+              وانتیس
+            </span>
           </motion.a>
 
           {/* Desktop Navigation */}
@@ -139,7 +151,7 @@ export function Navbar() {
             <Button
               size="sm"
               className="hidden md:flex font-persian text-xl focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2"
-              onClick={() => handleScrollToSection('investors')}
+              onClick={() => handleScrollToSection("investors")}
               aria-label="Read investment proposal"
             >
               مطالعه پروپوزال
@@ -223,7 +235,7 @@ export function Navbar() {
                   className="font-persian text-base focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2"
                   onClick={() => {
                     setMobileMenuOpen(false);
-                    handleScrollToSection('investors');
+                    handleScrollToSection("investors");
                   }}
                   aria-label="Read investment proposal"
                 >
