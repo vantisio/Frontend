@@ -96,10 +96,10 @@ export function Navbar() {
             <Image
               src="/logo.png"
               alt="لوگوی وانتیس"
-              width={44}
-              height={44}
+              width={72}
+              height={72}
               priority
-              className="h-11 w-11 object-contain"
+              className="h-13 w-13 object-contain"
             />
 
             <span className="font-persian text-3xl font-bold text-text-primary">

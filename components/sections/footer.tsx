@@ -6,6 +6,7 @@ import { Moon, Sun, Github, Linkedin, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { fadeUp } from "@/animations/variants";
+import Image from "next/image";
 
 export function Footer() {
   const { theme, setTheme } = useTheme();
@@ -30,11 +31,22 @@ export function Footer() {
             variants={fadeUp}
             className="flex flex-col items-center md:items-start gap-4"
           >
-            <div className="font-persian text-xl sm:text-2xl font-bold text-text-primary">
-              وانتیس
+            <div className="flex items-center gap-2">
+              <Image
+                src="/logo.png"
+                alt="لوگوی وانتیس"
+                width={48}
+                height={48}
+                priority
+                className="h-13 w-13 object-contain"
+              />
+              <div className="font-persian text-xl sm:text-2xl font-bold text-text-primary">
+                وانتیس
+              </div>
             </div>
+
             <p className="font-persian text-sm text-text-muted">
-              ذهن‌ها به وب می‌آیند
+              ذهـن‌ها به وِب می‌آیـنـد!
             </p>
           </motion.div>
 
@@ -47,7 +59,7 @@ export function Footer() {
             className="flex items-center gap-6 sm:gap-8"
           >
             <a
-              href="#"
+              href="https://github.com/vantisio"
               className="p-2 rounded-lg hover:bg-card transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-accent-primary"
               aria-label="GitHub profile"
             >
@@ -61,7 +73,7 @@ export function Footer() {
               <Linkedin className="w-5 h-5 text-text-secondary hover:text-text-primary" />
             </a>
             <a
-              href="mailto:hello@vantis.io"
+              href="mailto:contact@vantis.ir"
               className="p-2 rounded-lg hover:bg-card transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-accent-primary"
               aria-label="Send email to Vantis"
             >
