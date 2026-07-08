@@ -12,9 +12,13 @@ Building software infrastructure — not just applications.
 
 <p align="center">
 
-<a href="https://vantis.ir">Website</a>
+<br>
+
+[Website](https://vantis.ir)
 •
-<a href="https://github.com/vantisio">Organization</a>
+[GitHub](https://github.com/vantisio)
+•
+Contact Us: contact@vantis.ir
 
 </p>
 
