@@ -182,7 +182,7 @@ export function Investors() {
                     <Button
                       variant="outline"
                       onClick={() => handleButtonClick(doc.route)}
-                      className={`group-hover:bg-${doc.accent} group-hover:text-white group-hover:border-${doc.accent} group-hover:shadow-sm dark:group-hover:bg-${doc.accent}/90 transition-all duration-200 font-persian w-full sm:w-auto`}
+                      className={`group-hover:bg-white group-hover:text-${doc.accent} group-hover:border-${doc.accent} group-hover:shadow-sm dark:group-hover:bg-${doc.accent} dark:group-hover:text-white dark:group-hover:border-${doc.accent} dark:group-hover:bg-${doc.accent}/90 transition-all duration-200 font-persian w-full sm:w-auto`}
                     >
                       {doc.cta}
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:-translate-x-1 transition-transform duration-200" />

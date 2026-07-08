@@ -127,7 +127,7 @@ export function Products() {
                     <Button
                       variant="outline"
                       onClick={() => handleProductClick(product.title)}
-                      className={`group-hover:bg-${product.accent} group-hover:text-white group-hover:border-${product.accent} group-hover:shadow-sm dark:group-hover:bg-${product.accent}/90 transition-all duration-200 font-persian w-full sm:w-auto`}
+                      className={`group-hover:bg-white group-hover:text-${product.accent} group-hover:border-${product.accent} group-hover:shadow-sm dark:group-hover:bg-${product.accent} dark:group-hover:text-white dark:group-hover:border-${product.accent} dark:group-hover:bg-${product.accent}/90 transition-all duration-200 font-persian w-full sm:w-auto`}
                     >
                       {product.cta}
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:-translate-x-1 transition-transform duration-200" />
