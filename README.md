@@ -8,9 +8,6 @@ Vantis Frontend
 
 <p align="center">
 Building software infrastructure — not just applications.
-</p>
-
-<p align="center">
 
 <br>
 
