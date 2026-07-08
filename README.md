@@ -11,11 +11,13 @@ Building software infrastructure — not just applications.
 
 <br>
 
+<p align="center">
 [Website](https://vantis.ir)
 •
 [GitHub](https://github.com/vantisio)
 •
 Contact Us: contact@vantis.ir
+</p>
 
 </p>
 
