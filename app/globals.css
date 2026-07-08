@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Mode Colors */
+    --background: #fafafa;
+    --background-secondary: #f5f5f5;
+    --surface: #ffffff;
+    --surface-elevated: #ffffff;
+    --card: #ffffff;
+    --card-hover: #fafafa;
+    --border: #e5e5e5;
+    --border-strong: #d4d4d4;
+    --text-primary: #171717;
+    --text-secondary: #525252;
+    --text-muted: #a3a3a3;
+
+    /* Core Product Accent - Industrial Orange */
+    --accent-primary: #ea580c;
+    --accent-primary-hover: #c2410c;
+    --accent-primary-soft: rgba(234, 88, 12, 0.1);
+
+    /* Social Product Accent - Electric Purple */
+    --accent-secondary: #7c3aed;
+    --accent-secondary-hover: #6d28d9;
+    --accent-secondary-soft: rgba(124, 58, 237, 0.1);
+
+    --danger: #dc2626;
+    --success: #16a34a;
+    --warning: #ca8a04;
+    --overlay: rgba(0, 0, 0, 0.5);
+    --focus: rgba(234, 88, 12, 0.5);
+    --selection: rgba(234, 88, 12, 0.2);
+
+    /* Radius Scale */
+    --radius-sm: 4;
+    --radius-md: 6;
+    --radius-lg: 8;
+    --radius-xl: 12;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+  }
+
+  .dark {
+    /* Dark Mode Colors */
+    --background: #0a0a0a;
+    --background-secondary: #141414;
+    --surface: #171717;
+    --surface-elevated: #1f1f1f;
+    --card: #171717;
+    --card-hover: #1f1f1f;
+    --border: #262626;
+    --border-strong: #404040;
+    --text-primary: #fafafa;
+    --text-secondary: #a3a3a3;
+    --text-muted: #525252;
+
+    /* Core Product Accent - Industrial Orange */
+    --accent-primary: #f97316;
+    --accent-primary-hover: #fb923c;
+    --accent-primary-soft: rgba(249, 115, 22, 0.15);
+
+    /* Social Product Accent - Electric Purple */
+    --accent-secondary: #8b5cf6;
+    --accent-secondary-hover: #a78bfa;
+    --accent-secondary-soft: rgba(139, 92, 246, 0.15);
+
+    --danger: #ef4444;
+    --success: #22c55e;
+    --warning: #eab308;
+    --overlay: rgba(0, 0, 0, 0.7);
+    --focus: rgba(249, 115, 22, 0.5);
+    --selection: rgba(249, 115, 22, 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-text-primary antialiased;
+  }
+
+  /* Focus visible styles for accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-focus ring-offset-2 ring-offset-background;
+  }
+
+  /* Offset for sticky navbar */
+  section[id] {
+    scroll-margin-top: 6rem;
+  }
+}
+
+@layer utilities {
+  /* Subtle dot pattern */
+  .bg-dot-pattern {
+    background-image: radial-gradient(
+      circle,
+      currentColor 1px,
+      transparent 1px
+    );
+    background-size: 24px 24px;
+    opacity: 0.03;
+  }
+
+  /* Subtle grid pattern */
+  .bg-grid-pattern {
+    background-image:
+      linear-gradient(to right, currentColor 1px, transparent 1px),
+      linear-gradient(to bottom, currentColor 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.02;
+  }
+
+  /* Subtle noise texture */
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    opacity: 0.02;
+  }
+}
