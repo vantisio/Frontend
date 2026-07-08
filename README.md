@@ -2,25 +2,18 @@
   <img src="./public/logo.png" width="240" alt="Vantis">
 </p>
 
-<h1 align="center">
-Vantis Frontend
-</h1>
+<h1 align="center">Vantis Frontend</h1>
 
 <p align="center">
-Building software infrastructure — not just applications.
-
-<br>
-
-<p align="center">
-
-[Website](https://vantis.ir)
-•
-[GitHub](https://github.com/vantisio)
-•
-Contact Us: contact@vantis.ir
-
+  Building software infrastructure — not just applications.
 </p>
 
+<p align="center">
+  <a href="https://vantis.ir">Website</a>
+  •
+  <a href="https://github.com/vantisio">GitHub</a>
+  •
+  <a href="mailto:contact@vantis.ir">Contact Us</a>
 </p>
 
 ---
