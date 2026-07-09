@@ -17,7 +17,6 @@ const engineers: TeamMember[] = [
       "Systems Design",
       "Distributed Systems",
       "Algorithms & Optimization",
-      "Applied Mathematics",
     ],
     github: "https://github.com/mrgray8",
     linkedin: "https://www.linkedin.com/in/kiyan-hashemi-756312219",
