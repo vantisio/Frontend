@@ -10,13 +10,14 @@ import { TeamMember } from "@/types";
 const engineers: TeamMember[] = [
   {
     name: "کیان هاشمی",
-    role: "Systems Developer and Mathematician",
-    description: "متخصص در طراحی الگوریتم‌ها و مدل‌سازی مسائل نرم‌افزاری.",
+    role: "Backend & Systems Developer",
+    description: "تمرکز بر توسعه محصول از لایه رابط کاربری تا بک‌اند.",
     expertise: [
-      "Algorithm Design & Optimization",
+      "Backend Development",
+      "Systems Design",
       "Distributed Systems",
-      "Applied Mathematics & Modeling",
-      "Backend Architecture",
+      "Algorithms & Optimization",
+      "Applied Mathematics",
     ],
     github: "https://github.com/mrgray8",
     linkedin: "https://www.linkedin.com/in/kiyan-hashemi-756312219",
