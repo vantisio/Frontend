@@ -34,14 +34,14 @@ export function Footer() {
             <div className="flex items-center gap-2">
               <Image
                 src="/logo.png"
-                alt="لوگوی وانتیس"
+                alt="لوگوی ونتیس"
                 width={48}
                 height={48}
                 priority
                 className="h-13 w-13 object-contain"
               />
               <div className="font-persian text-xl sm:text-2xl font-bold text-text-primary">
-                وانتیس
+                ونتیس
               </div>
             </div>
 
@@ -103,7 +103,7 @@ export function Footer() {
               </button>
             )}
             <p className="font-persian text-sm text-text-muted">
-              © ۱۴۰۵ وانتیس. تمامی حقوق محفوظ است.
+              © ۱۴۰۵ ونتیس. تمامی حقوق محفوظ است.
             </p>
           </motion.div>
         </div>

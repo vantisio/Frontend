@@ -16,7 +16,7 @@ export function Hero() {
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
   };
@@ -123,7 +123,7 @@ export function Hero() {
             </motion.p>
 
             <motion.p className="font-persian text-base sm:text-lg text-text-muted leading-relaxed max-w-xl">
-              وانتیس یک شرکت مهندسی است که با تمرکز بر زیرساخت‌های اتوماسیون،
+              ونتیس یک شرکت مهندسی است که با تمرکز بر زیرساخت‌های اتوماسیون،
               پلتفرم‌های اجتماعی مقیاس‌پذیر و زیرساخت‌های نرم‌افزاری مدرن، آینده
               تکنولوژی را می‌سازد.
             </motion.p>
@@ -132,7 +132,7 @@ export function Hero() {
               <Button
                 size="lg"
                 className="font-persian text-base w-full sm:w-auto"
-                onClick={() => handleScrollToSection('investors')}
+                onClick={() => handleScrollToSection("investors")}
               >
                 مطالعه پروپوزال
               </Button>
@@ -140,7 +140,7 @@ export function Hero() {
                 size="lg"
                 variant="outline"
                 className="font-persian text-base w-full sm:w-auto"
-                onClick={() => handleScrollToSection('products')}
+                onClick={() => handleScrollToSection("products")}
               >
                 آشنایی با محصولات
               </Button>

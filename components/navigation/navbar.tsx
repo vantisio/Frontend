@@ -91,11 +91,11 @@ export function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.4, ease: easing }}
             className="flex items-center gap-3 rounded focus:outline-none focus:ring-2 focus:ring-accent-primary"
-            aria-label="وانتیس - صفحه اصلی"
+            aria-label="ونتیس - صفحه اصلی"
           >
             <Image
               src="/logo.png"
-              alt="لوگوی وانتیس"
+              alt="لوگوی ونتیس"
               width={72}
               height={72}
               priority
@@ -103,7 +103,7 @@ export function Navbar() {
             />
 
             <span className="font-persian text-3xl font-bold text-text-primary">
-              وانتیس
+              ونتیس
             </span>
           </motion.a>
 

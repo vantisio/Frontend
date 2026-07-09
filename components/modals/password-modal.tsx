@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { easing } from '@/animations/variants';
+import { useState, useEffect, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { easing } from "@/animations/variants";
 
 interface PasswordModalProps {
   isOpen: boolean;
@@ -14,8 +14,14 @@ interface PasswordModalProps {
   error?: string | null;
 }
 
-export function PasswordModal({ isOpen, onClose, onSubmit, isLoading = false, error = null }: PasswordModalProps) {
-  const [password, setPassword] = useState('');
+export function PasswordModal({
+  isOpen,
+  onClose,
+  onSubmit,
+  isLoading = false,
+  error = null,
+}: PasswordModalProps) {
+  const [password, setPassword] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   const modalRef = useRef<HTMLDivElement>(null);
 
@@ -29,17 +35,17 @@ export function PasswordModal({ isOpen, onClose, onSubmit, isLoading = false, er
   // Handle escape key and body scroll
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && !isLoading) {
+      if (e.key === "Escape" && !isLoading) {
         onClose();
       }
     };
 
     if (isOpen) {
-      document.addEventListener('keydown', handleEscape);
-      document.body.style.overflow = 'hidden';
+      document.addEventListener("keydown", handleEscape);
+      document.body.style.overflow = "hidden";
       return () => {
-        document.removeEventListener('keydown', handleEscape);
-        document.body.style.overflow = '';
+        document.removeEventListener("keydown", handleEscape);
+        document.body.style.overflow = "";
       };
     }
   }, [isOpen, onClose, isLoading]);
@@ -89,7 +95,7 @@ export function PasswordModal({ isOpen, onClose, onSubmit, isLoading = false, er
               >
                 <X className="w-5 h-5 text-text-secondary" />
               </button>
-
+              <br />
               {/* Content */}
               <div className="pt-2">
                 <h2
@@ -148,7 +154,7 @@ export function PasswordModal({ isOpen, onClose, onSubmit, isLoading = false, er
                       disabled={!password.trim() || isLoading}
                       className="flex-1 font-persian"
                     >
-                      {isLoading ? 'در حال بررسی...' : 'ادامه'}
+                      {isLoading ? "در حال بررسی..." : "ادامه"}
                     </Button>
                   </div>
                 </form>

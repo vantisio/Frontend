@@ -130,7 +130,7 @@ export function Investors() {
               id="investors-title"
               className="font-persian text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-text-primary mb-6"
             >
-              همکاری با وانتیس
+              همکاری با ونتیس
             </h2>
             <p className="font-persian text-lg sm:text-xl text-text-secondary max-w-2xl mx-auto">
               فرصت سرمایه‌گذاری در آینده تکنولوژی
@@ -182,7 +182,7 @@ export function Investors() {
                     <Button
                       variant="outline"
                       onClick={() => handleButtonClick(doc.route)}
-                      className={`group-hover:bg-white group-hover:text-${doc.accent} group-hover:border-${doc.accent} group-hover:shadow-sm dark:group-hover:bg-${doc.accent} dark:group-hover:text-white dark:group-hover:border-${doc.accent} dark:group-hover:bg-${doc.accent}/90 transition-all duration-200 font-persian w-full sm:w-auto`}
+                      className={`group-hover:text-${doc.accent} group-hover:border-${doc.accent} group-hover:shadow-sm dark:group-hover:bg-${doc.accent} dark:group-hover:text-white dark:group-hover:border-${doc.accent} dark:group-hover:bg-${doc.accent}/10 transition-all duration-200 font-persian w-full sm:w-auto`}
                     >
                       {doc.cta}
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:-translate-x-1 transition-transform duration-200" />

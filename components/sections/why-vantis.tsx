@@ -80,7 +80,7 @@ export function WhyVantis() {
             id="why-vantis-title"
             className="font-persian text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-text-primary mb-6"
           >
-            چرا وانتیس؟
+            چرا ونتیس؟
           </h2>
           <p className="font-persian text-lg sm:text-xl text-text-secondary max-w-2xl mx-auto">
             ارزش‌های مهندسی که ما را متمایز می‌کند
